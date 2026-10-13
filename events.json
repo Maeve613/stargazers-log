@@ -1,0 +1,23 @@
+[
+  {
+    "name": "awesome",
+    "owner": "sindresorhus",
+    "description": "A curated list of awesome things.",
+    "url": "https://github.com/sindresorhus/awesome",
+    "starredAt": "2026-09-24"
+  },
+  {
+    "name": "vite",
+    "owner": "vitejs",
+    "description": "Next generation frontend tooling.",
+    "url": "https://github.com/vitejs/vite",
+    "starredAt": "2026-09-18"
+  },
+  {
+    "name": "squoosh",
+    "owner": "GoogleChromeLabs",
+    "description": "Make images smaller using best-in-class codecs.",
+    "url": "https://github.com/GoogleChromeLabs/squoosh",
+    "starredAt": "2026-09-12"
+  }
+]
