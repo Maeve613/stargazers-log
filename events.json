@@ -1,0 +1,20 @@
+[
+  {
+    "name": "react",
+    "url": "https://github.com/facebook/react",
+    "description": "A JavaScript library for building user interfaces.",
+    "starredAt": "2026-10-12"
+  },
+  {
+    "name": "vscode",
+    "url": "https://github.com/microsoft/vscode",
+    "description": "The source code for Visual Studio Code.",
+    "starredAt": "2026-09-28"
+  },
+  {
+    "name": "ripgrep",
+    "url": "https://github.com/BurntSushi/ripgrep",
+    "description": "A fast command-line tool for searching files.",
+    "starredAt": "2026-09-14"
+  }
+]
