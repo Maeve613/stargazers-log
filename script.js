@@ -12,8 +12,12 @@ async function renderRepositories() {
     if (!Array.isArray(repositories)) {
       throw new Error("Repository data must be a list.");
     }
-
-    for (const repository of repositories) {
+const validRepositories = repositories.filter(repository => {
+  const hasValidNameAndUrl = repository.name && typeof repository.name === 'string'&&
+                             repository.url && typeof repository.url === 'string';
+  const hasValiDate = repository.starredAt && !isNaN(new Date(repository.starredAt).getTime());
+  return hasValidNameAndUrl && hasValiDate;  
+    for (const repository of validRepositories) {
       const item = document.createElement("li");
       item.className = "repository-card";
 
