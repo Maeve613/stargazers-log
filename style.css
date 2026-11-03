@@ -93,8 +93,8 @@ h2 {
 
 .repository-card a:focus-visible {
   border-radius: 0.15rem;
-  outline: 3px solid #93c5fd;
-  outline-offset: 3px;
+  outline: 3px solid #005fcc;
+  outline-offset: 2px;
 }
 
 .repository-card p {
