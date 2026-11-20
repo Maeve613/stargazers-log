@@ -16,7 +16,8 @@ const validRepositories = repositories.filter(repository => {
   const hasValidNameAndUrl = repository.name && typeof repository.name === 'string'&&
                              repository.url && typeof repository.url === 'string';
   const hasValiDate = repository.starredAt && !isNaN(new Date(repository.starredAt).getTime());
-  return hasValidNameAndUrl && hasValiDate;  
+  return hasValidNameAndUrl && hasValiDate; 
+});
     for (const repository of validRepositories) {
       const item = document.createElement("li");
       item.className = "repository-card";
@@ -41,10 +42,10 @@ const validRepositories = repositories.filter(repository => {
     listStatus.textContent = repositories.length
       ? `${repositories.length} repositories`
       : "No starred repositories yet.";
-  } catch (error) {}
+  } catch (error) {
     listStatus.textContent = "Unable to load starred repositories.";
     console.error(error);
-  }
+  
+ }
 }
-
 renderRepositories();
