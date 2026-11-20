@@ -36,12 +36,12 @@ const validRepositories = repositories.filter(repository => {
 
       item.append(link, description, date);
       repositoryList.append(item);
-    });
+    }
 
     listStatus.textContent = repositories.length
       ? `${repositories.length} repositories`
       : "No starred repositories yet.";
-  } catch (error) {
+  } catch (error) {}
     listStatus.textContent = "Unable to load starred repositories.";
     console.error(error);
   }
